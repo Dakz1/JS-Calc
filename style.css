@@ -102,3 +102,13 @@ body {
 .button-container .equals:hover {
     background-color: var(--eq-button-hvr);
 }
+
+.button-container .button:active {
+    background-color: var(--bg-button-numbers);
+}
+.button-container .operand-clear:active {
+    background-color: var(--bg-operand);
+}
+.button-container .equals:active {
+    background-color: var(--eq-button);
+}
