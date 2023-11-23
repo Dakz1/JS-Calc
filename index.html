@@ -5,47 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script defer src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/07a3446430.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="./Images/favicon.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main class="container">
-        <header class="header">
-            Calculator
-        </header>
-
-        <section class="display">
-            <div class="prev-value"></div>
-            <input type="text" class="current-value" value="0" readonly>
-        </section>
-
-        <div class="button-containr">
-            <button class="clear-entry">CE</button>
-            <button class="clear-entry">C</button>
-            <button class="clear-entry">
-                
-            </button>
-            <button class="clear-entry">&divide</button>
-
-            <button class="clear-entry">7</button>
-            <button class="clear-entry">8</button>
-            <button class="clear-entry">9</button>
-            <button class="clear-entry">&times</button>
-
-            <button class="clear-entry">4</button>
-            <button class="clear-entry">5</button>
-            <button class="clear-entry">6</button>
-            <button class="clear-entry">-</button>
-
-            <button class="clear-entry">1</button>
-            <button class="clear-entry">2</button>
-            <button class="clear-entry">3</button>
-            <button class="clear-entry">+</button>
-
-            <button class="clear-entry">+/-</button>
-            <button class="clear-entry">0</button>
-            <button class="clear-entry">.</button>
-            <button class="clear-entry">=</button>
+        <div class="calculator">
+            <header class="header">Calculator</header>
+            <section class="display">
+                <div class="prev-value">10 + 5</div>
+                <div class="current-value">15</div>
+            </section>
+    
+            <div class="button-container">
+                <button class="button operand-clear clear-entry">CE</button>
+                <button class="button operand-clear clear">C</button>
+                <button class="button operand-clear delete">
+                    <i class="fas fa-backspace"></i>
+                </button>
+                <button class="button operand-clear divide">&divide</button>
+    
+                <button class="button seven">7</button>
+                <button class="button eight">8</button>
+                <button class="button nine">9</button>
+                <button class="button operand-clear multiply">&times</button>
+     
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button operand-clear">-</button>
+     
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button operand-clear">+</button>
+     
+                <button class="button">+/-</button>
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button equals">=</button>
+            </div>
         </div>
 
     </main>

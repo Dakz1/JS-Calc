@@ -1,13 +1,104 @@
-html {
+ :root {
+    --bg-main: #202020;
+    --bg-button-numbers: #3b3b3b;
+    --bg-operand: #323232;
+    --fc-white: #f5f7fa;
+    --eq-button: #4cc2ff;
+    --eq-button-hvr: #2596be;
+
+ }
+ 
+ .fas{
+    font-size: calc(0.7rem);
+    
+ }
+ 
+ html {
     font-size: 1.5rem;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
-    /* line-height: ; */
+    line-height: 1.4;
 }
 
 body {
+    background-image: linear-gradient(236deg, white, teal);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.header {
+    background-color: var(--bg-main);
+    color: var(--fc-white);
+    font-size:medium;
+    padding: 0.2em;
+}
+
+.calculator {
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    border-radius:0.3rem;
+    overflow: hidden;
+}
+
+.display {
+    min-height: 4rem ;
+    background-color: var(--bg-main);
+    color: var(--fc-white);
+    width: 16rem;
+    padding: 0.25rem 0.75rem;
+    font-size: calc(1rem * 1.2 * 1.2 * 1.2);
+    font-weight: 600;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.display .prev-value {
+    font-size: calc(0.7rem);
+    font-weight:200;
+
+}
+
+.button-container {
+    background-color: var(--bg-main);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    padding: 2px;
+    /* grid-template-areas: 
+        ""
+    ; */
+}
+
+.button-container > .button {
+    padding: 0.75rem 1rem;
+    font-size: calc(1rem);
+    border-radius: 0.2rem;
+    border-width: 0;
+    background-color: var(--bg-button-numbers);
+    color: var(--fc-white);
+
+}
+
+.button-container .equals {
+    background-color: var(--eq-button) ;
+    color: var(--bg-grey);
+}
+
+.button-container .operand-clear {
+    background-color: var(--bg-operand);
+    font-size: calc(0.7rem);
+}
+
+.button-container .button:hover {
+    background-color: var(--bg-operand);
+}
+.button-container .operand-clear:hover {
+    background-color: var(--bg-button-numbers);
+}
+.button-container .equals:hover {
+    background-color: var(--eq-button-hvr);
 }
