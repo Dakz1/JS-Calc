@@ -14,37 +14,37 @@
         <div class="calculator">
             <header class="header">Calculator</header>
             <section class="display">
-                <div class="prev-value">10 + 5</div>
-                <div class="current-value">15</div>
+                <div class="prev-value"></div>
+                <div class="current-value">0</div>
             </section>
     
             <div class="button-container">
                 <button class="button operand-clear clear-entry">CE</button>
-                <button class="button operand-clear clear">C</button>
-                <button class="button operand-clear delete">
+                <button class="button operand-clear" data-type="clear">C</button>
+                <button class="button operand-clear" data-type="delete">
                     <i class="fas fa-backspace"></i>
                 </button>
-                <button class="button operand-clear divide">&divide</button>
+                <button class="button operand-clear" data-type="operator" data-key="divide">&divide;</button>
     
-                <button class="button seven">7</button>
-                <button class="button eight">8</button>
-                <button class="button nine">9</button>
-                <button class="button operand-clear multiply">&times</button>
+                <button class="button" data-type="number">7</button>
+                <button class="button" data-type="number">8</button>
+                <button class="button" data-type="number">9</button>
+                <button class="button operand-clear" data-type="operator" data-key="times">&times;</button>
      
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="button operand-clear">-</button>
+                <button class="button" data-type="number">4</button>
+                <button class="button" data-type="number">5</button>
+                <button class="button" data-type="number">6</button>
+                <button class="button operand-clear" data-type="operator" data-key="minus">-</button>
      
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
-                <button class="button operand-clear">+</button>
+                <button class="button" data-type="number">1</button>
+                <button class="button" data-type="number">2</button>
+                <button class="button" data-type="number">3</button>
+                <button class="button operand-clear" data-type="operator" data-key="plus">+</button>
      
-                <button class="button">+/-</button>
-                <button class="button">0</button>
-                <button class="button">.</button>
-                <button class="button equals">=</button>
+                <button class="button" data-type="number">+/-</button>
+                <button class="button" data-type="number">0</button>
+                <button class="button" data-type="number">.</button>
+                <button class="button" data-type="equal">=</button>
             </div>
         </div>
 
